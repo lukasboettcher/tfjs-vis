@@ -323,6 +323,7 @@ interface FitCallbackOptions extends HistoryOptions {
    * 'onBatchEnd'].
    */
   callbacks?: string[];
+  title?: string;
 }
 
 function getAccumulator(
