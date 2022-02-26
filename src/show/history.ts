@@ -293,7 +293,7 @@ export function fitCallbacks(
       }
 
       const subContainer =
-          subSurface(drawArea, callbackName, {title: callbackName});
+          subSurface(drawArea, callbackName, {title: opts.title || callbackName});
       history(subContainer, metricLogs, presentMetrics, historyOpts);
       await nextFrame();
     };
